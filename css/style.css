@@ -1,0 +1,57 @@
+body {
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  margin: 0;
+}
+.envato-logo {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-image: url(../img/envato.png);
+  background-size: cover;
+  margin-left: -60px;
+  margin-top: -60px;
+}
+.message {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 40%;
+  font-size: 5em;
+  font-weight: 100;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  opacity: 1;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -ms-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  transition: all 0.6s;
+}
+.curtain-open .message {
+  margin-left: -100%;
+  opacity: 0;
+}
+.curtain-open polygon:first-child {
+  -webkit-transform: translate3d(0, -100%, 0);
+-moz-transform: translate3d(0, -100%, 0);
+-ms-transform: translate3d(0, -100%, 0);
+-o-transform: translate3d(0, -100%, 0);
+transform: translate3d(0, -100%, 0);
+}
+.curtain-open polygon:last-child {
+  -webkit-transform: translate3d(0, 100%, 0);
+  -moz-transform: translate3d(0, 100%, 0);
+  -ms-transform: translate3d(0, 100%, 0);
+  -o-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+}
+svg {
+  margin: 0;
+}
+polygon {
+  position: relative;
+  transition: all 0.4s;
+}
